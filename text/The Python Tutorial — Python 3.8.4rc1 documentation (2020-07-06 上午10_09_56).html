@@ -1,0 +1,345 @@
+<!DOCTYPE html> <html xmlns=http://www.w3.org/1999/xhtml style><!--
+ Page saved with SingleFile 
+ url: https://docs.python.org/3.8/tutorial/index.html 
+ saved date: Mon Jul 06 2020 10:09:56 GMT+0800 (台北標準時間)
+--><meta charset=utf-8>
+<title>The Python Tutorial — Python 3.8.4rc1 documentation</title>
+<style>:root{--sf-img-1:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9gEGxE4IQYzJ14AAAI3SURBVDjLZZNPSFVBFIe/e9+zd3silBCl0SZoU4s2rVq0EB5tQip4UNvATVGu3QRBiyAi2iltWkgbF5EgRhFFRpiWtrWIzDIV1Pzz7p15M2fmtvDevOqBw8DM9zvnN8ycgF3R/eDtM2mac96ZdrFNxBikqbRV+vHH/ut9gAZczoe7C3gnF0f6au1OLM5avFi8d1Ea+JvAMSAq8nsKOGs5f2cYJ3Y7rc2PO4BqkS8DdD98f9tbe1ysCoxOBo1qlEXHJWcM4b5KPU19zleA0o4Clx99eO3EdqVewHsCoFRugUoVghJO7A6H6Vx9wdtYi27cr5x6dy/03nVtWTU7bWeZh6jNUcAiCaFTURl9A+gs56AviHzh3mnqtdPxm6knfQPLU7UaokASQq/agY7yDrG16Mba6Pz48NP56VdrgAApYObGaicPtkovToFLQBKA/WUxTe3FRk4san15aGKgd3Dj560rrdGJS6FT0X9YYvLuiMKL1kAQOpHZ3PqfyZfP41+9PW1VfzX0RXFSECfgNEmSTgImdDruF2O0E8vvqZG1auQubAsKooIYYHpGvwA2g+xndQBHgWa6cG0ih5cW/w6VvEq3nChwCoBvs+bL2Z7VceBHGTDAIrABpMVuhw+4OiLgLIglOLPYBTQAlfErIeCzjRVg1dtEb1kt5Omv+DTV2YssAN+zNdkzC42N9brV8WdvYp07seOdM2Of1F3AAknW0AJpwN6IgEPAEaANaMlcbmZdl7KRBuAfAb+v//yMAJoAAAAASUVORK5CYII=")}div.clearer{clear:both}div.related{width:100%;font-size:90%}div.related ul{margin:0;padding:0 0 0 10px;list-style:none}div.related li{display:inline}div.related li.right{float:right;margin-right:5px}div.sphinxsidebarwrapper{padding:10px 5px 0 10px}div.sphinxsidebar{float:left;width:230px;margin-left:-100%;word-wrap:break-word;overflow-wrap:break-word}div.sphinxsidebar ul{list-style:none}img{border:0;max-width:100%}div.body{min-width:450px;max-width:800px}div.body p,div.body li{-moz-hyphens:auto;-ms-hyphens:auto;-webkit-hyphens:auto}a.headerlink{visibility:hidden}h1:hover>a.headerlink,h2:hover>a.headerlink,h3:hover>a.headerlink,h4:hover>a.headerlink,h5:hover>a.headerlink,h6:hover>a.headerlink,dt:hover>a.headerlink,caption:hover>a.headerlink,p.caption:hover>a.headerlink,div.code-block-caption:hover>a.headerlink{visibility:visible}span.pre{-moz-hyphens:none;-ms-hyphens:none;-webkit-hyphens:none;hyphens:none}code.xref{background-color:transparent}html{background-color:#FFFFFF}body{font-family:'Lucida Grande',Arial,sans-serif;font-size:100%;color:#000;margin:0;padding:0}div.document{background-color:white}div.documentwrapper{float:left;width:100%}div.bodywrapper{margin:0 0 0 230px}div.body{background-color:white;color:#222222}div.footer{color:#555555;padding:9px 0 9px 0;font-size:75%}div.footer a{color:#555555;text-decoration:underline}div.related{background-color:white;line-height:30px;color:#666666}div.related a{color:#444444}div.sphinxsidebar h3{font-family:'Lucida Grande',Arial,sans-serif;color:#444444;font-size:1.4em;font-weight:normal;margin:0;padding:0}div.sphinxsidebar h4{font-family:'Lucida Grande',Arial,sans-serif;color:#444444;font-size:1.3em;font-weight:normal;margin:5px 0 0 0;padding:0}div.sphinxsidebar p{color:#444444}div.sphinxsidebar p.topless{margin:5px 10px 10px 10px}div.sphinxsidebar ul{margin:10px;padding:0;color:#444444}div.sphinxsidebar a{color:#444444}a{text-decoration:none}a:visited{color:#00608f;text-decoration:none}a:hover{text-decoration:underline}div.body h1{font-family:'Lucida Grande',Arial,sans-serif;background-color:white;font-weight:normal;color:#1a1a1a;border-bottom:1px solid #ccc}div.body h1{margin-top:0;font-size:200%}a.headerlink{font-size:0.8em;padding:0 4px 0 4px;text-decoration:none}a.headerlink:hover{background-color:#aaaaaa;color:white}div.body p,div.body li{text-align:justify;line-height:130%}code{padding:0 1px 0 1px}body{background-color:white;margin-left:1em;margin-right:1em}div.related{margin-bottom:1.2em;padding:0.5em 0;border-top:1px solid #ccc;margin-top:0.5em}div.related a:hover{color:#0095C4}div.related:first-child{border-top:0;border-bottom:1px solid #ccc}.inline-search{display:inline}form.inline-search input{display:inline}form.inline-search input[type="submit"]{width:40px}div.sphinxsidebar{background-color:#eeeeee;border-radius:5px;line-height:130%;font-size:smaller}div.sphinxsidebar h3,div.sphinxsidebar h4{margin-top:1.5em}div.sphinxsidebar a:hover{color:#0095C4}form.inline-search input{font-family:'Lucida Grande',Arial,sans-serif;border:1px solid #999999;font-size:smaller;border-radius:3px}div.body{padding:0 0 0 1.2em}div.body p{line-height:140%}div.body h1{margin:0;border:0;padding:0.3em 0}div.body a{color:#0072aa}div.body a:visited{color:#6363bb}div.body a:hover{color:#00B0E4}code{font-family:monospace,sans-serif;font-size:96.5%}div.body code{border-radius:3px}div.body code.xref{font-weight:normal}div.footer{line-height:150%;margin-top:-2em;text-align:right;width:auto;margin-right:10px}div.footer a:hover{color:#0095C4}</style>
+<link rel=search type=application/opensearchdescription+xml title="Search within Python 3.8.4rc1 documentation" href=https://docs.python.org/3.8/_static/opensearch.xml>
+<link rel=author title="About these documents" href=https://docs.python.org/3.8/about.html>
+<link rel=index title=Index href=https://docs.python.org/3.8/genindex.html>
+<link rel=search title=Search href=https://docs.python.org/3.8/search.html>
+<link rel=copyright title=Copyright href=https://docs.python.org/3.8/copyright.html>
+<link rel=next title="1. Whetting Your Appetite" href=https://docs.python.org/3.8/tutorial/appetite.html>
+<link rel=prev title=Changelog href=https://docs.python.org/3.8/whatsnew/changelog.html>
+<link rel=canonical href=https://docs.python.org/3/tutorial/index.html>
+<link rel="shortcut icon" type=image/png href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9gEGxE4IQYzJ14AAAI3SURBVDjLZZNPSFVBFIe/e9+zd3silBCl0SZoU4s2rVq0EB5tQip4UNvATVGu3QRBiyAi2iltWkgbF5EgRhFFRpiWtrWIzDIV1Pzz7p15M2fmtvDevOqBw8DM9zvnN8ycgF3R/eDtM2mac96ZdrFNxBikqbRV+vHH/ut9gAZczoe7C3gnF0f6au1OLM5avFi8d1Ea+JvAMSAq8nsKOGs5f2cYJ3Y7rc2PO4BqkS8DdD98f9tbe1ysCoxOBo1qlEXHJWcM4b5KPU19zleA0o4Clx99eO3EdqVewHsCoFRugUoVghJO7A6H6Vx9wdtYi27cr5x6dy/03nVtWTU7bWeZh6jNUcAiCaFTURl9A+gs56AviHzh3mnqtdPxm6knfQPLU7UaokASQq/agY7yDrG16Mba6Pz48NP56VdrgAApYObGaicPtkovToFLQBKA/WUxTe3FRk4san15aGKgd3Dj560rrdGJS6FT0X9YYvLuiMKL1kAQOpHZ3PqfyZfP41+9PW1VfzX0RXFSECfgNEmSTgImdDruF2O0E8vvqZG1auQubAsKooIYYHpGvwA2g+xndQBHgWa6cG0ih5cW/w6VvEq3nChwCoBvs+bL2Z7VceBHGTDAIrABpMVuhw+4OiLgLIglOLPYBTQAlfErIeCzjRVg1dtEb1kt5Omv+DTV2YssAN+zNdkzC42N9brV8WdvYp07seOdM2Of1F3AAknW0AJpwN6IgEPAEaANaMlcbmZdl7KRBuAfAb+v//yMAJoAAAAASUVORK5CYII="><style>.sf-hidden{display:none!important}</style><body data-gr-c-s-loaded=true>
+ 
+ <div class=related role=navigation aria-label="related navigation">
+ <h3 class=sf-hidden>Navigation</h3>
+ <ul>
+ <li class=right style=margin-right:10px>
+ <a href=https://docs.python.org/3.8/genindex.html title="General Index" accesskey=I>index</a></li>
+ <li class=right>
+ <a href=https://docs.python.org/3.8/py-modindex.html title="Python Module Index">modules</a> |</li>
+ <li class=right>
+ <a href=https://docs.python.org/3.8/tutorial/appetite.html title="1. Whetting Your Appetite" accesskey=N>next</a> |</li>
+ <li class=right>
+ <a href=https://docs.python.org/3.8/whatsnew/changelog.html title=Changelog accesskey=P>previous</a> |</li>
+ <li><img src='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><rect fill-opacity="0"/></svg>' alt style="vertical-align:middle;margin-top:-1px;background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-1)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important"></li>
+ <li><a href=https://www.python.org/>Python</a> »</li>
+ 
+ <li><span class=language_switcher_placeholder><select><option value=en selected>English<option value=fr>French<option value=ja>Japanese<option value=ko>Korean<option value=pt-br>Brazilian Portuguese<option value=zh-cn>Simplified Chinese<option value=zh-tw>Traditional Chinese</select></span> <span class=version_switcher_placeholder><select><option value=3.10>dev (3.10)<option value=3.9>pre (3.9)<option value=3.8 selected>3.8.4rc1<option value=3.7>3.7<option value=3.6>3.6<option value=3.5>3.5<option value=2.7>2.7</select></span> <a href=https://docs.python.org/3.8/index.html>Documentation</a> »</li>
+ <li class=right>
+ 
+ <div class=inline-search role=search>
+ <form class=inline-search action=../search.html>
+ <input placeholder="Quick search" type=text name=q value>
+ <input type=submit value=Go>
+ 
+ 
+ </form>
+ </div>
+ 
+ |
+ </li>
+ </ul>
+ </div> 
+ <div class=document>
+ <div class=documentwrapper>
+ <div class=bodywrapper>
+ <div class=body role=main>
+ 
+ <div class=section id=the-python-tutorial>
+<span id=tutorial-index></span><h1>The Python Tutorial<a class=headerlink href=#the-python-tutorial title="Permalink to this headline">¶</a></h1>
+<p>Python is an easy to learn, powerful programming language. It has efficient
+high-level data structures and a simple but effective approach to
+object-oriented programming. Python’s elegant syntax and dynamic typing,
+together with its interpreted nature, make it an ideal language for scripting
+and rapid application development in many areas on most platforms.</p>
+<p>The Python interpreter and the extensive standard library are freely available
+in source or binary form for all major platforms from the Python Web site,
+<a class="reference external" href=https://www.python.org/>https://www.python.org/</a>, and may be freely distributed. The same site also
+contains distributions of and pointers to many free third party Python modules,
+programs and tools, and additional documentation.</p>
+<p>The Python interpreter is easily extended with new functions and data types
+implemented in C or C++ (or other languages callable from C). Python is also
+suitable as an extension language for customizable applications.</p>
+<p>This tutorial introduces the reader informally to the basic concepts and
+features of the Python language and system. It helps to have a Python
+interpreter handy for hands-on experience, but all examples are self-contained,
+so the tutorial can be read off-line as well.</p>
+<p>For a description of standard objects and modules, see <a class="reference internal" href=https://docs.python.org/3.8/library/index.html#library-index><span class="std std-ref">The Python Standard Library</span></a>.
+<a class="reference internal" href=https://docs.python.org/3.8/reference/index.html#reference-index><span class="std std-ref">The Python Language Reference</span></a> gives a more formal definition of the language. To write
+extensions in C or C++, read <a class="reference internal" href=https://docs.python.org/3.8/extending/index.html#extending-index><span class="std std-ref">Extending and Embedding the Python Interpreter</span></a> and
+<a class="reference internal" href=https://docs.python.org/3.8/c-api/index.html#c-api-index><span class="std std-ref">Python/C API Reference Manual</span></a>. There are also several books covering Python in depth.</p>
+<p>This tutorial does not attempt to be comprehensive and cover every single
+feature, or even every commonly used feature. Instead, it introduces many of
+Python’s most noteworthy features, and will give you a good idea of the
+language’s flavor and style. After reading it, you will be able to read and
+write Python modules and programs, and you will be ready to learn more about the
+various Python library modules described in <a class="reference internal" href=https://docs.python.org/3.8/library/index.html#library-index><span class="std std-ref">The Python Standard Library</span></a>.</p>
+<p>The <a class="reference internal" href=https://docs.python.org/3.8/glossary.html#glossary><span class="std std-ref">Glossary</span></a> is also worth going through.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class=toctree-l1><a class="reference internal" href=https://docs.python.org/3.8/tutorial/appetite.html>1. Whetting Your Appetite</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://docs.python.org/3.8/tutorial/interpreter.html>2. Using the Python Interpreter</a><ul>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/interpreter.html#invoking-the-interpreter>2.1. Invoking the Interpreter</a><ul>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/interpreter.html#argument-passing>2.1.1. Argument Passing</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/interpreter.html#interactive-mode>2.1.2. Interactive Mode</a></li>
+</ul>
+</li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/interpreter.html#the-interpreter-and-its-environment>2.2. The Interpreter and Its Environment</a><ul>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/interpreter.html#source-code-encoding>2.2.1. Source Code Encoding</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class=toctree-l1><a class="reference internal" href=https://docs.python.org/3.8/tutorial/introduction.html>3. An Informal Introduction to Python</a><ul>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/introduction.html#using-python-as-a-calculator>3.1. Using Python as a Calculator</a><ul>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/introduction.html#numbers>3.1.1. Numbers</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/introduction.html#strings>3.1.2. Strings</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/introduction.html#lists>3.1.3. Lists</a></li>
+</ul>
+</li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/introduction.html#first-steps-towards-programming>3.2. First Steps Towards Programming</a></li>
+</ul>
+</li>
+<li class=toctree-l1><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html>4. More Control Flow Tools</a><ul>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#if-statements>4.1. <code class="xref std std-keyword docutils literal notranslate"><span class=pre>if</span></code> Statements</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#for-statements>4.2. <code class="xref std std-keyword docutils literal notranslate"><span class=pre>for</span></code> Statements</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#the-range-function>4.3. The <code class="xref py py-func docutils literal notranslate"><span class=pre>range()</span></code> Function</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops>4.4. <code class="xref std std-keyword docutils literal notranslate"><span class=pre>break</span></code> and <code class="xref std std-keyword docutils literal notranslate"><span class=pre>continue</span></code> Statements, and <code class="xref std std-keyword docutils literal notranslate"><span class=pre>else</span></code> Clauses on Loops</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#pass-statements>4.5. <code class="xref std std-keyword docutils literal notranslate"><span class=pre>pass</span></code> Statements</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#defining-functions>4.6. Defining Functions</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#more-on-defining-functions>4.7. More on Defining Functions</a><ul>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#default-argument-values>4.7.1. Default Argument Values</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#keyword-arguments>4.7.2. Keyword Arguments</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#special-parameters>4.7.3. Special parameters</a><ul>
+<li class=toctree-l4><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#positional-or-keyword-arguments>4.7.3.1. Positional-or-Keyword Arguments</a></li>
+<li class=toctree-l4><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#positional-only-parameters>4.7.3.2. Positional-Only Parameters</a></li>
+<li class=toctree-l4><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#keyword-only-arguments>4.7.3.3. Keyword-Only Arguments</a></li>
+<li class=toctree-l4><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#function-examples>4.7.3.4. Function Examples</a></li>
+<li class=toctree-l4><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#recap>4.7.3.5. Recap</a></li>
+</ul>
+</li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#arbitrary-argument-lists>4.7.4. Arbitrary Argument Lists</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#unpacking-argument-lists>4.7.5. Unpacking Argument Lists</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#lambda-expressions>4.7.6. Lambda Expressions</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#documentation-strings>4.7.7. Documentation Strings</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#function-annotations>4.7.8. Function Annotations</a></li>
+</ul>
+</li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/controlflow.html#intermezzo-coding-style>4.8. Intermezzo: Coding Style</a></li>
+</ul>
+</li>
+<li class=toctree-l1><a class="reference internal" href=https://docs.python.org/3.8/tutorial/datastructures.html>5. Data Structures</a><ul>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/datastructures.html#more-on-lists>5.1. More on Lists</a><ul>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/datastructures.html#using-lists-as-stacks>5.1.1. Using Lists as Stacks</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/datastructures.html#using-lists-as-queues>5.1.2. Using Lists as Queues</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/datastructures.html#list-comprehensions>5.1.3. List Comprehensions</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/datastructures.html#nested-list-comprehensions>5.1.4. Nested List Comprehensions</a></li>
+</ul>
+</li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/datastructures.html#the-del-statement>5.2. The <code class="xref std std-keyword docutils literal notranslate"><span class=pre>del</span></code> statement</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/datastructures.html#tuples-and-sequences>5.3. Tuples and Sequences</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/datastructures.html#sets>5.4. Sets</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/datastructures.html#dictionaries>5.5. Dictionaries</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/datastructures.html#looping-techniques>5.6. Looping Techniques</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/datastructures.html#more-on-conditions>5.7. More on Conditions</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/datastructures.html#comparing-sequences-and-other-types>5.8. Comparing Sequences and Other Types</a></li>
+</ul>
+</li>
+<li class=toctree-l1><a class="reference internal" href=https://docs.python.org/3.8/tutorial/modules.html>6. Modules</a><ul>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/modules.html#more-on-modules>6.1. More on Modules</a><ul>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/modules.html#executing-modules-as-scripts>6.1.1. Executing modules as scripts</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/modules.html#the-module-search-path>6.1.2. The Module Search Path</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/modules.html#compiled-python-files>6.1.3. “Compiled” Python files</a></li>
+</ul>
+</li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/modules.html#standard-modules>6.2. Standard Modules</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/modules.html#the-dir-function>6.3. The <code class="xref py py-func docutils literal notranslate"><span class=pre>dir()</span></code> Function</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/modules.html#packages>6.4. Packages</a><ul>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/modules.html#importing-from-a-package>6.4.1. Importing * From a Package</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/modules.html#intra-package-references>6.4.2. Intra-package References</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/modules.html#packages-in-multiple-directories>6.4.3. Packages in Multiple Directories</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class=toctree-l1><a class="reference internal" href=https://docs.python.org/3.8/tutorial/inputoutput.html>7. Input and Output</a><ul>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/inputoutput.html#fancier-output-formatting>7.1. Fancier Output Formatting</a><ul>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/inputoutput.html#formatted-string-literals>7.1.1. Formatted String Literals</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/inputoutput.html#the-string-format-method>7.1.2. The String format() Method</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/inputoutput.html#manual-string-formatting>7.1.3. Manual String Formatting</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/inputoutput.html#old-string-formatting>7.1.4. Old string formatting</a></li>
+</ul>
+</li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/inputoutput.html#reading-and-writing-files>7.2. Reading and Writing Files</a><ul>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/inputoutput.html#methods-of-file-objects>7.2.1. Methods of File Objects</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/inputoutput.html#saving-structured-data-with-json>7.2.2. Saving structured data with <code class="xref py py-mod docutils literal notranslate"><span class=pre>json</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class=toctree-l1><a class="reference internal" href=https://docs.python.org/3.8/tutorial/errors.html>8. Errors and Exceptions</a><ul>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/errors.html#syntax-errors>8.1. Syntax Errors</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/errors.html#exceptions>8.2. Exceptions</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/errors.html#handling-exceptions>8.3. Handling Exceptions</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/errors.html#raising-exceptions>8.4. Raising Exceptions</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/errors.html#user-defined-exceptions>8.5. User-defined Exceptions</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/errors.html#defining-clean-up-actions>8.6. Defining Clean-up Actions</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/errors.html#predefined-clean-up-actions>8.7. Predefined Clean-up Actions</a></li>
+</ul>
+</li>
+<li class=toctree-l1><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html>9. Classes</a><ul>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html#a-word-about-names-and-objects>9.1. A Word About Names and Objects</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html#python-scopes-and-namespaces>9.2. Python Scopes and Namespaces</a><ul>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html#scopes-and-namespaces-example>9.2.1. Scopes and Namespaces Example</a></li>
+</ul>
+</li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html#a-first-look-at-classes>9.3. A First Look at Classes</a><ul>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html#class-definition-syntax>9.3.1. Class Definition Syntax</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html#class-objects>9.3.2. Class Objects</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html#instance-objects>9.3.3. Instance Objects</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html#method-objects>9.3.4. Method Objects</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html#class-and-instance-variables>9.3.5. Class and Instance Variables</a></li>
+</ul>
+</li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html#random-remarks>9.4. Random Remarks</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html#inheritance>9.5. Inheritance</a><ul>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html#multiple-inheritance>9.5.1. Multiple Inheritance</a></li>
+</ul>
+</li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html#private-variables>9.6. Private Variables</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html#odds-and-ends>9.7. Odds and Ends</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html#iterators>9.8. Iterators</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html#generators>9.9. Generators</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/classes.html#generator-expressions>9.10. Generator Expressions</a></li>
+</ul>
+</li>
+<li class=toctree-l1><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib.html>10. Brief Tour of the Standard Library</a><ul>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib.html#operating-system-interface>10.1. Operating System Interface</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib.html#file-wildcards>10.2. File Wildcards</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib.html#command-line-arguments>10.3. Command Line Arguments</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib.html#error-output-redirection-and-program-termination>10.4. Error Output Redirection and Program Termination</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib.html#string-pattern-matching>10.5. String Pattern Matching</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib.html#mathematics>10.6. Mathematics</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib.html#internet-access>10.7. Internet Access</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib.html#dates-and-times>10.8. Dates and Times</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib.html#data-compression>10.9. Data Compression</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib.html#performance-measurement>10.10. Performance Measurement</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib.html#quality-control>10.11. Quality Control</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib.html#batteries-included>10.12. Batteries Included</a></li>
+</ul>
+</li>
+<li class=toctree-l1><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib2.html>11. Brief Tour of the Standard Library — Part II</a><ul>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib2.html#output-formatting>11.1. Output Formatting</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib2.html#templating>11.2. Templating</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib2.html#working-with-binary-data-record-layouts>11.3. Working with Binary Data Record Layouts</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib2.html#multi-threading>11.4. Multi-threading</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib2.html#logging>11.5. Logging</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib2.html#weak-references>11.6. Weak References</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib2.html#tools-for-working-with-lists>11.7. Tools for Working with Lists</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/stdlib2.html#decimal-floating-point-arithmetic>11.8. Decimal Floating Point Arithmetic</a></li>
+</ul>
+</li>
+<li class=toctree-l1><a class="reference internal" href=https://docs.python.org/3.8/tutorial/venv.html>12. Virtual Environments and Packages</a><ul>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/venv.html#introduction>12.1. Introduction</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/venv.html#creating-virtual-environments>12.2. Creating Virtual Environments</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/venv.html#managing-packages-with-pip>12.3. Managing Packages with pip</a></li>
+</ul>
+</li>
+<li class=toctree-l1><a class="reference internal" href=https://docs.python.org/3.8/tutorial/whatnow.html>13. What Now?</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://docs.python.org/3.8/tutorial/interactive.html>14. Interactive Input Editing and History Substitution</a><ul>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/interactive.html#tab-completion-and-history-editing>14.1. Tab Completion and History Editing</a></li>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/interactive.html#alternatives-to-the-interactive-interpreter>14.2. Alternatives to the Interactive Interpreter</a></li>
+</ul>
+</li>
+<li class=toctree-l1><a class="reference internal" href=https://docs.python.org/3.8/tutorial/floatingpoint.html>15. Floating Point Arithmetic: Issues and Limitations</a><ul>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/floatingpoint.html#representation-error>15.1. Representation Error</a></li>
+</ul>
+</li>
+<li class=toctree-l1><a class="reference internal" href=https://docs.python.org/3.8/tutorial/appendix.html>16. Appendix</a><ul>
+<li class=toctree-l2><a class="reference internal" href=https://docs.python.org/3.8/tutorial/appendix.html#interactive-mode>16.1. Interactive Mode</a><ul>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/appendix.html#error-handling>16.1.1. Error Handling</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/appendix.html#executable-python-scripts>16.1.2. Executable Python Scripts</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/appendix.html#the-interactive-startup-file>16.1.3. The Interactive Startup File</a></li>
+<li class=toctree-l3><a class="reference internal" href=https://docs.python.org/3.8/tutorial/appendix.html#the-customization-modules>16.1.4. The Customization Modules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+ </div>
+ </div>
+ </div>
+ <div class=sphinxsidebar role=navigation aria-label="main navigation">
+ <div class=sphinxsidebarwrapper style=float:left;margin-right:0px;width:202px;top:0px>
+ <h4>Previous topic</h4>
+ <p class=topless><a href=https://docs.python.org/3.8/whatsnew/changelog.html title="previous chapter">Changelog</a></p>
+ <h4>Next topic</h4>
+ <p class=topless><a href=https://docs.python.org/3.8/tutorial/appetite.html title="next chapter"><span class=section-number>1. </span>Whetting Your Appetite</a></p>
+ <div role=note aria-label="source link">
+ <h3>This Page</h3>
+ <ul class=this-page-menu>
+ <li><a href=https://docs.python.org/3.8/bugs.html>Report a Bug</a></li>
+ <li>
+ <a href=https://github.com/python/cpython/blob/3.8/Doc/tutorial/index.rst rel=nofollow>Show Source
+ </a>
+ </li>
+ </ul>
+ </div>
+ </div>
+ <div id=sidebarbutton title="Collapse sidebar" style="border-radius:0px 5px 5px 0px;color:rgb(68,68,68);background-color:rgb(204,204,204);font-size:1.2em;cursor:pointer;height:3346.19px;padding-top:1px;padding-left:1px;margin-left:218px"><span style=display:block;position:fixed;top:294px>«</span></div></div>
+ <div class=clearer></div>
+ </div> 
+ <div class=related role=navigation aria-label="related navigation">
+ <h3 class=sf-hidden>Navigation</h3>
+ <ul>
+ <li class=right style=margin-right:10px>
+ <a href=https://docs.python.org/3.8/genindex.html title="General Index">index</a></li>
+ <li class=right>
+ <a href=https://docs.python.org/3.8/py-modindex.html title="Python Module Index">modules</a> |</li>
+ <li class=right>
+ <a href=https://docs.python.org/3.8/tutorial/appetite.html title="1. Whetting Your Appetite">next</a> |</li>
+ <li class=right>
+ <a href=https://docs.python.org/3.8/whatsnew/changelog.html title=Changelog>previous</a> |</li>
+ <li><img src='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><rect fill-opacity="0"/></svg>' alt style="vertical-align:middle;margin-top:-1px;background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-1)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important"></li>
+ <li><a href=https://www.python.org/>Python</a> »</li>
+ 
+ <li>
+ <a href=https://docs.python.org/3.8/index.html>3.8.4rc1 Documentation</a> »
+ </li>
+ <li class=right>
+ 
+ <div class=inline-search role=search>
+ <form class=inline-search action=../search.html>
+ <input placeholder="Quick search" type=text name=q value>
+ <input type=submit value=Go>
+ 
+ 
+ </form>
+ </div>
+ 
+ |
+ </li>
+ </ul>
+ </div> 
+ <div class=footer>
+ © <a href=https://docs.python.org/3.8/copyright.html>Copyright</a> 2001-2020, Python Software Foundation.
+ <br>
+ The Python Software Foundation is a non-profit corporation.
+<a href=https://www.python.org/psf/donations/>Please donate.</a>
+<br>
+ <br>
+ Last updated on Jul 05, 2020.
+ <a href=https://docs.python.org/3/bugs.html>Found a bug</a>?
+ <br>
+ Created using <a href=https://www.sphinx-doc.org/>Sphinx</a> 2.3.1.
+ </div>
+ 
+ 
+<div id=ambiance-notification></div><div id=blue_light_filter style="width:100%;height:100%;z-index:2147483646;transition:-webkit-transform 10s ease-in-out 0s;position:fixed!important;left:0px!important;bottom:0px!important;overflow:hidden!important;pointer-events:none!important;background:rgb(164,195,0);opacity:0.15"></div><div id=blf_status style="position:fixed!important;width:105px;height:27px;color:white;text-shadow:1px 2px 4px #000;font-size:20px;font-weight:bold;background-color:blue;z-index:2147483647;right:0px;top:0px;display:none;font-family:arial,sans-serif;text-align:center"></div>

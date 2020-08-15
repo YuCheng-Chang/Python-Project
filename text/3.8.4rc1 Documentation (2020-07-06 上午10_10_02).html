@@ -1,0 +1,178 @@
+<!DOCTYPE html> <html xmlns=http://www.w3.org/1999/xhtml><!--
+ Page saved with SingleFile 
+ url: https://docs.python.org/3.8/index.html 
+ saved date: Mon Jul 06 2020 10:10:02 GMT+0800 (台北標準時間)
+--><meta charset=utf-8>
+<title>3.8.4rc1 Documentation</title>
+<style>:root{--sf-img-1:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9gEGxE4IQYzJ14AAAI3SURBVDjLZZNPSFVBFIe/e9+zd3silBCl0SZoU4s2rVq0EB5tQip4UNvATVGu3QRBiyAi2iltWkgbF5EgRhFFRpiWtrWIzDIV1Pzz7p15M2fmtvDevOqBw8DM9zvnN8ycgF3R/eDtM2mac96ZdrFNxBikqbRV+vHH/ut9gAZczoe7C3gnF0f6au1OLM5avFi8d1Ea+JvAMSAq8nsKOGs5f2cYJ3Y7rc2PO4BqkS8DdD98f9tbe1ysCoxOBo1qlEXHJWcM4b5KPU19zleA0o4Clx99eO3EdqVewHsCoFRugUoVghJO7A6H6Vx9wdtYi27cr5x6dy/03nVtWTU7bWeZh6jNUcAiCaFTURl9A+gs56AviHzh3mnqtdPxm6knfQPLU7UaokASQq/agY7yDrG16Mba6Pz48NP56VdrgAApYObGaicPtkovToFLQBKA/WUxTe3FRk4san15aGKgd3Dj560rrdGJS6FT0X9YYvLuiMKL1kAQOpHZ3PqfyZfP41+9PW1VfzX0RXFSECfgNEmSTgImdDruF2O0E8vvqZG1auQubAsKooIYYHpGvwA2g+xndQBHgWa6cG0ih5cW/w6VvEq3nChwCoBvs+bL2Z7VceBHGTDAIrABpMVuhw+4OiLgLIglOLPYBTQAlfErIeCzjRVg1dtEb1kt5Omv+DTV2YssAN+zNdkzC42N9brV8WdvYp07seOdM2Of1F3AAknW0AJpwN6IgEPAEaANaMlcbmZdl7KRBuAfAb+v//yMAJoAAAAASUVORK5CYII=")}div.clearer{clear:both}div.related{width:100%;font-size:90%}div.related ul{margin:0;padding:0 0 0 10px;list-style:none}div.related li{display:inline}div.related li.right{float:right;margin-right:5px}div.sphinxsidebarwrapper{padding:10px 5px 0 10px}div.sphinxsidebar{float:left;width:230px;margin-left:-100%;word-wrap:break-word;overflow-wrap:break-word}div.sphinxsidebar ul{list-style:none}img{border:0;max-width:100%}table.contentstable{width:90%;margin-left:auto;margin-right:auto}table.contentstable p.biglink{line-height:150%}a.biglink{font-size:1.3em}span.linkdescr{font-style:italic;padding-top:5px;font-size:90%}div.body{min-width:450px;max-width:800px}div.body p{-moz-hyphens:auto;-ms-hyphens:auto;-webkit-hyphens:auto}div.body td{text-align:left}th>p:first-child,td>p:first-child{margin-top:0px}th>p:last-child,td>p:last-child{margin-bottom:0px}html{background-color:#FFFFFF}body{font-family:'Lucida Grande',Arial,sans-serif;font-size:100%;color:#000;margin:0;padding:0}div.document{background-color:white}div.documentwrapper{float:left;width:100%}div.bodywrapper{margin:0 0 0 230px}div.body{background-color:white;color:#222222}div.footer{color:#555555;padding:9px 0 9px 0;font-size:75%}div.footer a{color:#555555;text-decoration:underline}div.related{background-color:white;line-height:30px;color:#666666}div.related a{color:#444444}div.sphinxsidebar h3{font-family:'Lucida Grande',Arial,sans-serif;color:#444444;font-size:1.4em;font-weight:normal;margin:0;padding:0}div.sphinxsidebar p{color:#444444}div.sphinxsidebar ul{margin:10px;padding:0;color:#444444}div.sphinxsidebar a{color:#444444}a{text-decoration:none}a:visited{color:#00608f;text-decoration:none}a:hover{text-decoration:underline}div.body h1{font-family:'Lucida Grande',Arial,sans-serif;background-color:white;font-weight:normal;color:#1a1a1a;border-bottom:1px solid #ccc}div.body h1{margin-top:0;font-size:200%}div.body p{text-align:justify}body{background-color:white;margin-left:1em;margin-right:1em}div.related{margin-bottom:1.2em;padding:0.5em 0;border-top:1px solid #ccc;margin-top:0.5em}div.related a:hover{color:#0095C4}div.related:first-child{border-top:0;border-bottom:1px solid #ccc}.inline-search{display:inline}form.inline-search input{display:inline}form.inline-search input[type="submit"]{width:40px}div.sphinxsidebar{background-color:#eeeeee;border-radius:5px;line-height:130%;font-size:smaller}div.sphinxsidebar h3{margin-top:1.5em}div.sphinxsidebarwrapper>h3:first-child{margin-top:0.2em}div.sphinxsidebar a:hover{color:#0095C4}form.inline-search input{font-family:'Lucida Grande',Arial,sans-serif;border:1px solid #999999;font-size:smaller;border-radius:3px}div.body{padding:0 0 0 1.2em}div.body p{line-height:140%}div.body h1{margin:0;border:0;padding:0.3em 0}div.body a{color:#0072aa}div.body a:visited{color:#6363bb}div.body a:hover{color:#00B0E4}table p{text-align:left!important}div.footer{line-height:150%;margin-top:-2em;text-align:right;width:auto;margin-right:10px}div.footer a:hover{color:#0095C4}</style>
+<link rel=search type=application/opensearchdescription+xml title="Search within Python 3.8.4rc1 documentation" href=https://docs.python.org/3.8/_static/opensearch.xml>
+<link rel=author title="About these documents" href=https://docs.python.org/3.8/about.html>
+<link rel=index title=Index href=https://docs.python.org/3.8/genindex.html>
+<link rel=search title=Search href=https://docs.python.org/3.8/search.html>
+<link rel=copyright title=Copyright href=https://docs.python.org/3.8/copyright.html>
+<link rel=canonical href=https://docs.python.org/3/index.html>
+<link rel="shortcut icon" type=image/png href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9gEGxE4IQYzJ14AAAI3SURBVDjLZZNPSFVBFIe/e9+zd3silBCl0SZoU4s2rVq0EB5tQip4UNvATVGu3QRBiyAi2iltWkgbF5EgRhFFRpiWtrWIzDIV1Pzz7p15M2fmtvDevOqBw8DM9zvnN8ycgF3R/eDtM2mac96ZdrFNxBikqbRV+vHH/ut9gAZczoe7C3gnF0f6au1OLM5avFi8d1Ea+JvAMSAq8nsKOGs5f2cYJ3Y7rc2PO4BqkS8DdD98f9tbe1ysCoxOBo1qlEXHJWcM4b5KPU19zleA0o4Clx99eO3EdqVewHsCoFRugUoVghJO7A6H6Vx9wdtYi27cr5x6dy/03nVtWTU7bWeZh6jNUcAiCaFTURl9A+gs56AviHzh3mnqtdPxm6knfQPLU7UaokASQq/agY7yDrG16Mba6Pz48NP56VdrgAApYObGaicPtkovToFLQBKA/WUxTe3FRk4san15aGKgd3Dj560rrdGJS6FT0X9YYvLuiMKL1kAQOpHZ3PqfyZfP41+9PW1VfzX0RXFSECfgNEmSTgImdDruF2O0E8vvqZG1auQubAsKooIYYHpGvwA2g+xndQBHgWa6cG0ih5cW/w6VvEq3nChwCoBvs+bL2Z7VceBHGTDAIrABpMVuhw+4OiLgLIglOLPYBTQAlfErIeCzjRVg1dtEb1kt5Omv+DTV2YssAN+zNdkzC42N9brV8WdvYp07seOdM2Of1F3AAknW0AJpwN6IgEPAEaANaMlcbmZdl7KRBuAfAb+v//yMAJoAAAAASUVORK5CYII="><style>.sf-hidden{display:none!important}</style><body data-gr-c-s-loaded=true>
+ 
+ <div class=related role=navigation aria-label="related navigation">
+ <h3 class=sf-hidden>Navigation</h3>
+ <ul>
+ <li class=right style=margin-right:10px>
+ <a href=https://docs.python.org/3.8/genindex.html title="General Index" accesskey=I>index</a></li>
+ <li class=right>
+ <a href=https://docs.python.org/3.8/py-modindex.html title="Python Module Index">modules</a> |</li>
+ <li><img src='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><rect fill-opacity="0"/></svg>' alt style="vertical-align:middle;margin-top:-1px;background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-1)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important"></li>
+ <li><a href=https://www.python.org/>Python</a> »</li>
+ 
+ <li><span class=language_switcher_placeholder><select><option value=en selected>English<option value=fr>French<option value=ja>Japanese<option value=ko>Korean<option value=pt-br>Brazilian Portuguese<option value=zh-cn>Simplified Chinese<option value=zh-tw>Traditional Chinese</select></span> <span class=version_switcher_placeholder><select><option value=3.10>dev (3.10)<option value=3.9>pre (3.9)<option value=3.8 selected>3.8.4rc1<option value=3.7>3.7<option value=3.6>3.6<option value=3.5>3.5<option value=2.7>2.7</select></span> <a href=https://docs.python.org/index.html>Documentation</a> »</li>
+ <li class=right>
+ 
+ <div class=inline-search role=search>
+ <form class=inline-search action=search.html>
+ <input placeholder="Quick search" type=text name=q value>
+ <input type=submit value=Go>
+ 
+ 
+ </form>
+ </div>
+ 
+ |
+ </li>
+ </ul>
+ </div> 
+ <div class=document>
+ <div class=documentwrapper>
+ <div class=bodywrapper>
+ <div class=body role=main>
+ 
+ <h1>Python 3.8.4rc1 documentation</h1>
+ <p>
+ Welcome! This is the documentation for Python 3.8.4rc1.
+ </p>
+ <p><strong>Parts of the documentation:</strong></p>
+ <table class=contentstable align=center><tbody><tr>
+ <td width=50%>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/whatsnew/3.8.html>What's new in Python 3.8?</a><br>
+ <span class=linkdescr> or <a href=https://docs.python.org/3.8/whatsnew/index.html>all "What's new" documents</a> since 2.0</span></p>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/tutorial/index.html>Tutorial</a><br>
+ <span class=linkdescr>start here</span></p>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/library/index.html>Library Reference</a><br>
+ <span class=linkdescr>keep this under your pillow</span></p>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/reference/index.html>Language Reference</a><br>
+ <span class=linkdescr>describes syntax and language elements</span></p>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/using/index.html>Python Setup and Usage</a><br>
+ <span class=linkdescr>how to use Python on different platforms</span></p>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/howto/index.html>Python HOWTOs</a><br>
+ <span class=linkdescr>in-depth documents on specific topics</span></p>
+ <td width=50%>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/installing/index.html>Installing Python Modules</a><br>
+ <span class=linkdescr>installing from the Python Package Index &amp; other sources</span></p>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/distributing/index.html>Distributing Python Modules</a><br>
+ <span class=linkdescr>publishing modules for installation by others</span></p>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/extending/index.html>Extending and Embedding</a><br>
+ <span class=linkdescr>tutorial for C/C++ programmers</span></p>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/c-api/index.html>Python/C API</a><br>
+ <span class=linkdescr>reference for C/C++ programmers</span></p>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/faq/index.html>FAQs</a><br>
+ <span class=linkdescr>frequently asked questions (with answers!)</span></p>
+ </tr>
+ </table>
+ <p><strong>Indices and tables:</strong></p>
+ <table class=contentstable align=center><tbody><tr>
+ <td width=50%>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/py-modindex.html>Global Module Index</a><br>
+ <span class=linkdescr>quick access to all modules</span></p>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/genindex.html>General Index</a><br>
+ <span class=linkdescr>all functions, classes, terms</span></p>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/glossary.html>Glossary</a><br>
+ <span class=linkdescr>the most important terms explained</span></p>
+ <td width=50%>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/search.html>Search page</a><br>
+ <span class=linkdescr>search this documentation</span></p>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/contents.html>Complete Table of Contents</a><br>
+ <span class=linkdescr>lists all sections and subsections</span></p>
+ </tr>
+ </table>
+ <p><strong>Meta information:</strong></p>
+ <table class=contentstable align=center><tbody><tr>
+ <td width=50%>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/bugs.html>Reporting bugs</a></p>
+ <p class=biglink><a class=biglink href=https://devguide.python.org/docquality/#helping-with-documentation>Contributing to Docs</a></p>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/about.html>About the documentation</a></p>
+ <td width=50%>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/license.html>History and License of Python</a></p>
+ <p class=biglink><a class=biglink href=https://docs.python.org/3.8/copyright.html>Copyright</a></p>
+ </tr>
+ </table>
+ </div>
+ </div>
+ </div>
+ <div class=sphinxsidebar role=navigation aria-label="main navigation">
+ <div class=sphinxsidebarwrapper style=float:left;margin-right:0px;width:202px;top:0px><h3>Download</h3>
+<p><a href=https://docs.python.org/3.8/download.html>Download these documents</a></p>
+<h3>Docs by version</h3>
+<ul>
+ <li><a href=https://docs.python.org/3.10/>Python 3.10 (in development)</a></li>
+<li><a href=https://docs.python.org/3.9/>Python 3.9 (pre-release)</a></li>
+<li><a href=https://docs.python.org/3.8/>Python 3.8 (stable)</a></li>
+<li><a href=https://docs.python.org/3.7/>Python 3.7 (security-fixes)</a></li>
+<li><a href=https://docs.python.org/3.6/>Python 3.6 (security-fixes)</a></li>
+<li><a href=https://docs.python.org/3.5/>Python 3.5 (security-fixes)</a></li>
+<li><a href=https://docs.python.org/2.7/>Python 2.7 (EOL)</a></li>
+ <li><a href=https://www.python.org/doc/versions/>All versions</a></li>
+</ul>
+<h3>Other resources</h3>
+<ul>
+ 
+ <li><a href=https://www.python.org/dev/peps/>PEP Index</a></li>
+ <li><a href=https://wiki.python.org/moin/BeginnersGuide>Beginner's Guide</a></li>
+ <li><a href=https://wiki.python.org/moin/PythonBooks>Book List</a></li>
+ <li><a href=https://www.python.org/doc/av/>Audio/Visual Talks</a></li>
+ <li><a href=https://devguide.python.org/>Python Developer’s Guide</a></li>
+</ul>
+ </div>
+ <div id=sidebarbutton title="Collapse sidebar" style="border-radius:0px 5px 5px 0px;color:rgb(68,68,68);background-color:rgb(204,204,204);font-size:1.2em;cursor:pointer;height:946.188px;padding-top:1px;padding-left:1px;margin-left:218px"><span style=display:block;position:fixed;top:294px>«</span></div></div>
+ <div class=clearer></div>
+ </div> 
+ <div class=related role=navigation aria-label="related navigation">
+ <h3 class=sf-hidden>Navigation</h3>
+ <ul>
+ <li class=right style=margin-right:10px>
+ <a href=https://docs.python.org/3.8/genindex.html title="General Index">index</a></li>
+ <li class=right>
+ <a href=https://docs.python.org/3.8/py-modindex.html title="Python Module Index">modules</a> |</li>
+ <li><img src='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><rect fill-opacity="0"/></svg>' alt style="vertical-align:middle;margin-top:-1px;background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-1)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important"></li>
+ <li><a href=https://www.python.org/>Python</a> »</li>
+ 
+ <li>
+ <a href=#>3.8.4rc1 Documentation</a> »
+ </li>
+ <li class=right>
+ 
+ <div class=inline-search role=search>
+ <form class=inline-search action=search.html>
+ <input placeholder="Quick search" type=text name=q value>
+ <input type=submit value=Go>
+ 
+ 
+ </form>
+ </div>
+ 
+ |
+ </li>
+ </ul>
+ </div> 
+ <div class=footer>
+ © <a href=https://docs.python.org/3.8/copyright.html>Copyright</a> 2001-2020, Python Software Foundation.
+ <br>
+ The Python Software Foundation is a non-profit corporation.
+<a href=https://www.python.org/psf/donations/>Please donate.</a>
+<br>
+ <br>
+ Last updated on Jul 05, 2020.
+ <a href=https://docs.python.org/3/bugs.html>Found a bug</a>?
+ <br>
+ Created using <a href=https://www.sphinx-doc.org/>Sphinx</a> 2.3.1.
+ </div>
+ 
+ 
+<div id=ambiance-notification></div><div id=blue_light_filter style="width:100%;height:100%;z-index:2147483646;transition:-webkit-transform 10s ease-in-out 0s;position:fixed!important;left:0px!important;bottom:0px!important;overflow:hidden!important;pointer-events:none!important;background:rgb(164,195,0);opacity:0.15"></div><div id=blf_status style="position:fixed!important;width:105px;height:27px;color:white;text-shadow:1px 2px 4px #000;font-size:20px;font-weight:bold;background-color:blue;z-index:2147483647;right:0px;top:0px;display:none;font-family:arial,sans-serif;text-align:center"></div>
