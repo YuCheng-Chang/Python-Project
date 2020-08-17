@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="250be88a-8cbb-4a6c-afca-85807e80b65a" name="Default Changelist" comment="" />
+    <list default="true" id="96427a3e-4b70-4ed7-8d6c-5441dfb13273" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_init_.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lambda/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lambda/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1g5tPvvBZE53yXwo0s0LTmLk6T9" />
+  <component name="ProjectId" id="1gB58DEW3EnRoJYmMavl3vx6gsn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -33,8 +36,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="lambda" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="lambda" />
+    <configuration name="_init_" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="_init_" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -45,7 +48,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lambda.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_init_.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -56,7 +59,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.lambda" />
+        <item itemvalue="Python._init_" />
       </list>
     </recent_temporary>
   </component>
@@ -65,11 +68,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="250be88a-8cbb-4a6c-afca-85807e80b65a" name="Default Changelist" comment="" />
-      <created>1597416260139</created>
+      <changelist id="96427a3e-4b70-4ed7-8d6c-5441dfb13273" name="Default Changelist" comment="" />
+      <created>1597574983475</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1597416260139</updated>
+      <updated>1597574983475</updated>
     </task>
     <servers />
   </component>
@@ -78,10 +81,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
